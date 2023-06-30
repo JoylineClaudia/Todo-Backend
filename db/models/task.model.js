@@ -8,7 +8,7 @@ const TaskSchema = new mongoose.Schema({
         trim: true
     },
     _listId: {
-        type : mongoose.Schema.Types.ObjectId,
+        type : mongoose.Types.ObjectId,
         required: true
     },
     completed: {

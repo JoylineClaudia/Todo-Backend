@@ -3,10 +3,10 @@ const _ = require('lodash');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
-const { resolve } = require('path');
+// const { resolve } = require('path');
 
 // jwt
-const jwtSecret = "9450016648406250124934lqxuncn188ija0xsc2ajuwq9i44jx0emfv27yr";
+const jwtSecret = "945001664840625012488ija0xsc2ajuwq9i44jx0emfv27yr";
 
 const UserSchema = new mongoose.Schema({
     email: {
@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
         minlength: 1,
         trim: true,
-        uniqu: true
+        unique: true
     },
     password: {
         type: String,
